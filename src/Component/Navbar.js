@@ -8,7 +8,6 @@ const Navbar = () => {
                 <div><h1>LOGO</h1></div>
                 <div className='navbaritems'>
 
-                    {/* isActive in Navbar */}
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
                         className="nabar-link" to="/home">Home</NavLink><br /> <br />
@@ -27,7 +26,12 @@ const Navbar = () => {
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
-                        className="nabar-link" to="/user/devilal"> User Devilal</NavLink> <br /> <br /></div>
+                        className="nabar-link" to="/user/devilal"> User Devilal</NavLink> <br /> <br />
+                    <NavLink
+                        style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
+
+                        className="nabar-link" to="/SearchPrams">  Seacrh params</NavLink> <br /> <br />
+                        </div>
             </div>
 
         </div>
