@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 800px;
+  border: 2px solid blue;
+}
+.navbaritems {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.nabar-link{
+  text-decoration: none;
+  color: black;
+  font: bold;
+  font-weight: 500;
+  font-size: 18px;
+}
+.nabar-link:hover{
+  color: rgb(77, 243, 0);
+  
+}
+
+/* to active Navbar */
+/* .navbaritems .active{
+color: red;
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
