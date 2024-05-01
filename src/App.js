@@ -28,7 +28,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/navbar' element={<Navbar />} />
-          <Route path='/user/:name' element={<User />} />
+          <Route path='/user/:name'  element={<User />} />
           <Route path='/SearchPrams' element={<SearchPrams />} />
           <Route path='/' element={<Navigate to="/Page404" />} />
           <Route path='/page404' element={<Page404 />} />

@@ -28,11 +28,11 @@ const Navbar = () => {
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
-                        className="nabar-link" to="/user/anil"> User anil</NavLink> <br /> <br />
+                        className="nabar-link" to="/user/anil"  state={{name:'deepak',age:35}} > User anil</NavLink> <br /> <br />
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
-                        className="nabar-link" to="/user/devilal"> User Devilal</NavLink> <br /> <br />
+                        className="nabar-link" to="/user/devilal" > User Devilal</NavLink> <br /> <br />
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
