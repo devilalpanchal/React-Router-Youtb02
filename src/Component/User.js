@@ -1,14 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-function User(){
+function User() {
 
     const params = useParams();
-    const {name} = params
-    return(
+    const { name } = params
+    return (
         <>
-        <div>
-            <h2> This is User {name}'s Page</h2>
-        </div>
+            <div>
+                <h1>Hi devilal panchal</h1>
+                <h2> This is User {name}'s Page</h2>
+            </div>
         </>
     )
 }

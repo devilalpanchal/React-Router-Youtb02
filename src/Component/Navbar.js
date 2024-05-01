@@ -1,11 +1,13 @@
 import { Link, NavLink } from 'react-router-dom'
-// import logo from './logo192'
+import logo from './logo copy.svg';
+
 const Navbar = () => {
     return (
         <div>
             <div className='navbar'>
 
-                <div><h1>LOGO</h1></div>
+                <div>        <img src={logo} className="App-logo" alt="logo" />
+</div>
                 <div className='navbaritems'>
 
                     <NavLink
@@ -31,7 +33,7 @@ const Navbar = () => {
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
                         className="nabar-link" to="/SearchPrams">  Seacrh params</NavLink> <br /> <br />
-                        </div>
+                </div>
             </div>
 
         </div>
