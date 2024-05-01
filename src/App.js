@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 import Page404 from './Component/Page404';
 import User from './Component/User';
 import SearchPrams from './Component/SearchPrams';
+import Contactme from './Component/Contactme';
+import Campany from './Component/Campany';
+import Channel from './Component/Channel';
+import Others from './Component/Others';
 function App() {
   return (
     <div className="App">
@@ -28,6 +32,14 @@ function App() {
           <Route path='/SearchPrams' element={<SearchPrams />} />
           <Route path='/' element={<Navigate to="/Page404" />} />
           <Route path='/page404' element={<Page404 />} />
+
+          {/* nested Routes */}
+
+          <Route path='/contactme' element={<Contactme />}>
+            <Route path='campany' element={<Campany />} />
+            <Route path='channel' element={<Channel />} />
+            <Route path='others' element={<Others />} />
+          </Route>
         </Routes>
       </BR>
     </div>

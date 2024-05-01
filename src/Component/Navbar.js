@@ -20,6 +20,10 @@ const Navbar = () => {
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
+                        className="nabar-link" to="/contactme">Contact me</NavLink> <br /> <br />
+                    <NavLink
+                        style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
+
                         className="nabar-link" to="/">Contact us</NavLink> <br /> <br />
                     <NavLink
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
