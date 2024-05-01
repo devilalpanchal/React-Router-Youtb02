@@ -13,6 +13,8 @@ import Contactme from './Component/Contactme';
 import Campany from './Component/Campany';
 import Channel from './Component/Channel';
 import Others from './Component/Others';
+import Login from './Component/Login';
+import ProctedRoutes from './Component/ProctedRoutes';
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,8 @@ function App() {
         <Link to="/user/devilal"> User Devilal</Link> <br /> <br /> */}
         <Navbar />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/home' element={<ProctedRoutes Component={Home} />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/navbar' element={<Navbar />} />
           <Route path='/user/:name'  element={<User />} />

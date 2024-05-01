@@ -37,6 +37,10 @@ const Navbar = () => {
                         style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
 
                         className="nabar-link" to="/SearchPrams">  Seacrh params</NavLink> <br /> <br />
+                    <NavLink
+                        style={({ isActive }) => { return { color: isActive ? 'red' : 'blue' } }}
+
+                        className="nabar-link" to="/login">  Login</NavLink> <br /> <br />
                 </div>
             </div>
 
