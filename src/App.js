@@ -1,11 +1,9 @@
 import './App.css';
-import logo from './logo.svg';
 
 import { BrowserRouter as BR, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './Component/Home';
 import About from './Component/About';
 import Navbar from './Component/Navbar';
-import { Link } from 'react-router-dom';
 import Page404 from './Component/Page404';
 import User from './Component/User';
 import SearchPrams from './Component/SearchPrams';
@@ -31,7 +29,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/navbar' element={<Navbar />} />
-          <Route path='/user/:name'  element={<User />} />
+          <Route path='/user/:name' element={<User />} />
           <Route path='/SearchPrams' element={<SearchPrams />} />
           <Route path='/' element={<Navigate to="/Page404" />} />
           <Route path='/page404' element={<Page404 />} />
